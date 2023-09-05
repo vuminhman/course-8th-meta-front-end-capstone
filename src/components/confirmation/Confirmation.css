@@ -1,0 +1,40 @@
+.confirmation-container {
+    background-color: #495E57;
+    border-radius: 16px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-title {
+    font-size: 36px;
+    color: #F4CE14;
+    margin-bottom: 20px;
+}
+
+.confirmation-info {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.confirmation-info p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.confirmation-key {
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.confirmation-value {
+    font-weight: 400;
+    background-color: #1890ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
