@@ -55,10 +55,11 @@ const Booking = ({ bookingType, formTitle, fields, onSubmit }) => {
       <h2>{formTitle}</h2>
       {fields.map(({ label, name, type }) => (
         <div className="form-group" key={name}>
-          <label className="form-label">
+          <label className="form-label" htmlFor={name}>
             {label}:
           </label>
           <input
+            id={name}  // Add id attribute
             className={`form-input ${formErrors[name] ? 'input-error' : ''}`}
             type={type}
             name={name}
