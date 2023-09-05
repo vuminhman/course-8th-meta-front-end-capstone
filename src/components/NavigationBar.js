@@ -1,15 +1,14 @@
 import React from 'react';
 
-const NavigationBar = () => (
+const NavigationBar = ({ onLoginClick }) => (
   <nav className="navbar">
-    <img src="https://imgur.com/fI4GnOc.png" alt="Pho Delight Logo" id="logo" />
     <ul className="nav-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="./home">Home</a></li>
+      <li><a href="./home">Menu</a></li>
+      <li><a href="./home">About Us</a></li>
+      <li><a href="./home">Contact</a></li>
     </ul>
-    <button className="login-button">Login</button>
+    <button className="login-button" onClick={onLoginClick}>Login</button>
   </nav>
 );
 
