@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import { UserProvider } from "./contexts/UserContext";
+import { Helmet } from 'react-helmet';
 import Header from "./components/common/Header";
 import Menu from "./components/home/Menu";
 import Footer from "./components/common/Footer";
@@ -20,6 +21,16 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        {/* Meta tags */}
+        <meta name="description" content="Pho Delight" />
+        <meta name="keywords" content="React, Pho Delight, App" />
+        
+        {/* Open Graph Protocol Tags */}
+        <meta property="og:title" content="Pho Delight" />
+        <meta property="og:description" content="Authentic Vietnamese Restaurant" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <UserProvider>
         <Router>
           {/* These components are now outside of Routes and will always render */}
