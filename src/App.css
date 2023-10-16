@@ -142,15 +142,15 @@ footer {
   background-color: #2c2b2a;
   color: #ffffff;
   text-align: center;
-  padding: 1em;
-  border-top: 4px solid #333;  
+  padding: 0.5em;
+  /* border-top: 4px solid #333;   */
   position: fixed; 
   bottom: 0; 
   left: 0; 
   right: 0; 
 }
 #footer-logo img {
-  max-height: 80px;
+  max-height: 40px;
   max-width: 80px;
   margin: 0 auto;
   filter: grayscale(100%);
